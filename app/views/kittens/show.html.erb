@@ -1,0 +1,12 @@
+<h1><%= @kitten.name %></h1>
+<ul>
+  <li>Cuteness: <%= @kitten.cuteness %></li>
+  <li>Softness: <%= @kitten.softness %></li>
+  <li>Age: <%= @kitten.age %></li>
+</ul>
+
+<ul>
+  <li><%= link_to "edit kitten", edit_kitten_url %></li>
+  <li><%= link_to "DESTROY kitten", @kitten, method: "delete" %> </li>  
+  <li><%= link_to "back to index", root_url %></li>
+</ul>

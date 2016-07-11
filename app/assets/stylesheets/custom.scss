@@ -1,0 +1,23 @@
+@import 'https://fonts.googleapis.com/css?family=Lato|Suez+One';
+
+body {
+  font-family: "Lato";
+}
+
+h1, h2, h3, h4 {
+  font-family: "Suez One"
+}
+
+a {
+  text-decoration: none;
+  color: #2A5DB0;
+  &:hover {
+    color: #333;
+  }
+}
+
+.flash {
+ text-align: center;
+ font-style: italic;
+ background-color: #dff322;
+}

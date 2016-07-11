@@ -1,0 +1,11 @@
+<h1>Look: here's a list of all the kittens</h1>
+<ul>
+  <% @kittens.each do |kitten| %>
+    <li>
+      <%= link_to kitten.name, kitten %>  | 
+      <%= link_to "edit", edit_kitten_path(kitten) %>  |
+      <%= link_to "destroy", kitten, method: "delete" %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "New Kitten", new_kitten_url %>
